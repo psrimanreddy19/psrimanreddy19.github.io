@@ -240,13 +240,12 @@ h2 {
     background-color: #fff;  /* White background for cards */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 0px;  /* Remove padding to give more space for the logo */
+    padding: 0px;  /* Remove padding to allow more space for the logo */
     max-width: 380px;  /* Adjusted width for cards */
     width: 100%;
     color: #333;  /* Dark text color */
     display: flex;
     flex-direction: column;
-    align-items: center;  /* Center the content inside the card */
     transition: transform 0.3s ease;
 }
 
@@ -255,13 +254,14 @@ h2 {
 }
 
 .edu-logo {
-    width: 100%;  /* Logo covers the full width of the card */
-    height: 150px;  /* Set a fixed height for the logo area */
-    object-fit: cover;  /* Ensure the logo fills the height without distortion */
-    background-color: #f0f0f0; /* Optional: Add a background color for contrast */
+    width: 100%;  /* Logo will cover the entire width of the card */
+    height: 180px;  /* Fix a larger height to cover more vertical space */
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #f0f0f0;  /* Optional: background color for contrast */
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .edu-logo img {
@@ -270,7 +270,7 @@ h2 {
 }
 
 .edu-details {
-    padding: 20px;  /* Add padding only for the details */
+    padding: 20px;  /* Padding for text content */
     text-align: left;  /* Ensure text is left-aligned after the logo */
     width: 100%;  /* Text takes full width under the logo */
 }
