@@ -4,68 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sriman Reddy Portfolio</title>
+    <!-- Google Fonts for Modern Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
 <body>
+
+    <!-- Header Section -->
     <header>
-        <h1>Sriman Reddy Pingili</h1>
-        <p>Software Engineer | Data Scientist</p>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Sriman Reddy Pingili</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am pursuing a Master's in Data Science at the University at Buffalo, with a strong focus on software engineering and AI/ML.</p>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi! I'm Sriman Reddy Pingili, currently pursuing my Master of Science in Data Science at the University at Buffalo. My passion lies in software engineering and artificial intelligence, where I strive to develop impactful, data-driven solutions.</p>
+        </div>
     </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <div class="education-entry">
-            <img src="images/UB_Logo.png" alt="University at Buffalo Logo" class="edu-logo">
-            <p><strong>University at Buffalo</strong>, The State University of New York<br> 
-            Master of Science in Data Science, Aug 2023 – Dec 2024<br> 
-            CGPA: 3.60/4.00</p>
+    <!-- Projects Section -->
+    <section id="projects" class="section alt-bg">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-cards">
+                <div class="card">
+                    <h3>DevOps-Enabled Problem-Solving Tracker App</h3>
+                    <p>A React-based app that helps users track their progress on interview problems, integrated with CI/CD pipelines for automated testing and deployment.</p>
+                </div>
+                <div class="card">
+                    <h3>BookBar Web Application</h3>
+                    <p>A full-stack website that acts as an online marketplace for buying and selling books, built with React.js, Node.js, and MongoDB.</p>
+                </div>
+                <div class="card">
+                    <h3>Mercari Price Suggestion Challenge</h3>
+                    <p>Developed a machine learning model for price prediction and built an interactive Flask-based UI for real-time price suggestions.</p>
+                </div>
+            </div>
         </div>
-        
-        <div class="education-entry">
-            <img src="images/IIITB_Logo.png" alt="IIIT Bangalore Logo" class="edu-logo">
-            <p><strong>International Institute of Information Technology, Bangalore</strong><br>
-            Integrated Master of Technology in Computer Science, Aug 2018 – Jul 2023<br>
-            Specialization in AI and Machine Learning</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li><strong>Languages:</strong> C++, Python, JavaScript, Golang</li>
+                <li><strong>Frameworks:</strong> React.js, Node.js, Flask</li>
+                <li><strong>Databases:</strong> MongoDB, PostgreSQL, MySQL</li>
+                <li><strong>DevOps:</strong> Docker, Kubernetes, Jenkins, Ansible</li>
+                <li><strong>AI/ML:</strong> TensorFlow, PyTorch, Scikit-learn, Transformers</li>
+            </ul>
         </div>
     </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>DevOps-Enabled Problem-Solving Tracker App</strong>: A React-based app with CI/CD pipeline.</li>
-            <li><strong>BookBar Web Application</strong>: Full-stack marketplace for buying and selling books.</li>
-        </ul>
+
+    <!-- Education Section -->
+    <section id="education" class="section alt-bg">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-entry">
+                <img src="images/UB_Logo.png" alt="University at Buffalo Logo" class="edu-logo">
+                <p><strong>University at Buffalo</strong>, The State University of New York<br> Master of Science in Data Science, Aug 2023 – Dec 2024<br> CGPA: 3.60/4.00</p>
+            </div>
+            <div class="education-entry">
+                <img src="images/IIITB_Logo.png" alt="IIIT Bangalore Logo" class="edu-logo">
+                <p><strong>International Institute of Information Technology, Bangalore</strong><br> Integrated Master of Technology in Computer Science, Aug 2018 – Jul 2023<br> Specialization in AI and Machine Learning</p>
+            </div>
+        </div>
     </section>
-    
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>Languages: C++, Java, Python, Go</p>
-        <p>Frameworks: React.js, Node.js, Flask</p>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:srimanre@buffalo.edu">srimanre@buffalo.edu</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/psrimanreddy" target="_blank">linkedin.com/in/psrimanreddy</a></p>
+            <p>
+                <a href="assets/Sriman_Resume_SDE.pdf" download="Sriman_Resume_SDE.pdf">
+                    <button>Download My Resume</button>
+                </a>
+            </p>
+        </div>
     </section>
-    
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:srimanre@buffalo.edu">srimanre@buffalo.edu</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/psrimanreddy">linkedin.com/in/psrimanreddy</a></p>
-        <p>
-            <a href="assets/Sriman_Resume_SDE.pdf" download="Sriman_Resume_SDE.pdf">
-                <button>Download My Resume</button>
-            </a>
-        </p>
-    </section>
-    
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Sriman Reddy Pingili</p>
+    </footer>
+
 </body>
 </html>

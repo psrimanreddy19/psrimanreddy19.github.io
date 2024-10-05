@@ -1,17 +1,38 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
 }
 
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    color: #2C3E50;
+    margin-bottom: 20px;
+}
+
+/* Header Styles */
 header {
-    background-color: #333;
+    background-color: #2C3E50;
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 28px;
 }
 
 header nav ul {
@@ -20,94 +41,122 @@ header nav ul {
 }
 
 header nav ul li {
-    display: inline;
+    display: inline-block;
     margin: 0 15px;
 }
 
 header nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: 600;
 }
 
-section {
-    padding: 20px;
-    margin: 20px;
+header nav ul li a:hover {
+    border-bottom: 2px solid #4CAF50;
 }
 
-footer {
+body {
+    padding-top: 80px;  /* To account for the fixed header */
+}
+
+/* Section Styling */
+.section {
+    padding: 60px 0;
+}
+
+.alt-bg {
+    background-color: #ECF0F1;
+}
+
+h2 {
     text-align: center;
-    padding: 10px 0;
-    background-color: #333;
-    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 40px;
 }
 
-/* Education Section Styles */
-#education {
-    margin: 20px;
+/* Project Cards */
+.project-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+/* Skills List */
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/* Education Section */
+.edu-logo {
+    max-height: 60px;
+    margin-right: 20px;
 }
 
 .education-entry {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
-.edu-logo {
-    max-height: 60px;  /* Restrict logo height to 60px */
-    width: auto;  /* Maintain aspect ratio */
-    margin-right: 20px;
-}
-
-.education-entry p {
-    margin: 0;
-    font-size: 1.1em;  /* Slightly larger font for readability */
-}
-
-/* Responsive Design for Smaller Screens */
-@media (max-width: 768px) {
-    .edu-logo {
-        max-height: 50px;  /* Make logos smaller on smaller screens */
-    }
-
-    .education-entry {
-        flex-direction: column;  /* Stack logo and text vertically on smaller screens */
-        text-align: center;
-    }
-
-    .education-entry p {
-        margin-top: 10px;
-    }
-}
-
-/* Skills, Projects, and Contact Sections */
-#skills, #projects, #contact {
-    margin: 20px;
-}
-
-#skills ul, #projects ul {
-    list-style: none;
-    padding: 0;
-}
-
-#skills ul li, #projects ul li {
-    margin-bottom: 10px;
-}
-
+/* Contact Section */
 button {
-    background-color: #4CAF50; /* Green background */
-    border: none;              /* No border */
-    color: white;              /* White text */
-    padding: 10px 20px;        /* Padding around the text */
-    text-align: center;        /* Center text */
-    text-decoration: none;     /* Remove underline */
-    display: inline-block;     /* Keep it inline */
-    font-size: 16px;           /* Font size */
-    margin: 10px 2px;          /* Space around the button */
-    cursor: pointer;           /* Pointer cursor on hover */
-    border-radius: 5px;        /* Rounded corners */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #45a049;
+}
+
+a {
+    text-decoration: none;
+    color: #2C3E50;
+}
+
+a:hover {
+    color: #4CAF50;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 5px 0;
 }
