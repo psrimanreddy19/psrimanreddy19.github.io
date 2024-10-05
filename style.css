@@ -39,3 +39,23 @@ footer {
     background-color: #333;
     color: white;
 }
+
+#education {
+    margin: 20px;
+}
+
+.education-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.edu-logo {
+    width: 80px;  /* Adjust the size as necessary */
+    height: auto;
+    margin-right: 20px;
+}
+
+.education-entry p {
+    margin: 0;
+}
