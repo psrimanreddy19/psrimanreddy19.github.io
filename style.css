@@ -1,96 +1,45 @@
-/* General Styles */
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-h1, h2, h3 {
-    color: #2C3E50;
-    margin-bottom: 20px;
-}
-
-/* Header Styles */
-header {
-    background-color: #2C3E50;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-    font-size: 28px;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-header nav ul li a:hover {
-    border-bottom: 2px solid #4CAF50;
-}
-
-body {
-    padding-top: 80px;  /* To account for the fixed header */
-}
-
 /* Home Section Styles */
 .home-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px 0;
+    padding: 80px 0;
 }
 
 .home-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;  /* Ensures responsiveness */
 }
 
 .image-wrapper {
     flex: 1;
+    max-width: 300px;  /* Limit image size */
 }
 
 .image-wrapper img {
     border-radius: 50%;
-    max-width: 250px;
+    width: 100%;  /* Ensures image is responsive */
+    height: auto;  /* Maintain aspect ratio */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .summary {
     flex: 2;
     margin-left: 40px;
+    max-width: 600px;
 }
 
 .summary h2 {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 600;
+}
+
+.summary p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 .resume-btn {
@@ -109,61 +58,15 @@ body {
     background-color: #45a049;
 }
 
-/* Skills Section with Icons */
-.skills-list {
-    list-style: none;
-    padding: 0;
-}
-
-.skills-list li {
-    margin-bottom: 15px;
-    font-size: 1.2em;
-}
-
-.skills-list li i {
-    margin-right: 10px;
-}
-
-/* Contact Form */
-#contact form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-#contact form input,
-#contact form textarea {
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-}
-
-#contact form button {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    font-size: 18px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#contact form button:hover {
-    background-color: #45a049;
-}
-
-/* Footer */
-footer {
-    background-color: #2C3E50;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-footer p {
-    margin: 5px 0;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .home-content {
+        flex-direction: column;  /* Stack image and summary vertically on small screens */
+        text-align: center;  /* Center content for smaller screens */
+    }
+    
+    .summary {
+        margin-left: 0;
+        margin-top: 20px;
+    }
 }
