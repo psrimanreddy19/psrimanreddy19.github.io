@@ -230,11 +230,12 @@ footer p {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 100%;
     max-width: 350px;
+    width: 100%;
     display: flex;
-    align-items: center;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;  /* Aligning the content centrally */
+    gap: 15px;
     transition: transform 0.2s ease;
 }
 
@@ -255,6 +256,7 @@ footer p {
 .edu-details p {
     margin: 5px 0;
     color: #555;
+    text-align: center; /* Center-aligning text */
 }
 
 .edu-details ul {
@@ -265,4 +267,5 @@ footer p {
 
 .edu-details ul li {
     margin-bottom: 5px;
+    text-align: left; /* Aligning list text to the left */
 }
