@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -40,6 +41,7 @@ footer {
     color: white;
 }
 
+/* Education Section Styles */
 #education {
     margin: 20px;
 }
@@ -51,11 +53,41 @@ footer {
 }
 
 .edu-logo {
-    width: 80px;  /* Adjust the size as necessary */
-    height: auto;
-    margin-right: 20px;
+    max-width: 100px;  /* Limits logo width to 100px */
+    height: auto;  /* Ensures logo maintains aspect ratio */
+    margin-right: 20px;  /* Space between logo and text */
 }
 
 .education-entry p {
     margin: 0;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .edu-logo {
+        max-width: 70px;  /* Makes logos smaller on smaller screens */
+    }
+
+    .education-entry {
+        flex-direction: column;  /* Stack logo and text vertically on smaller screens */
+        text-align: center;  /* Center align text for smaller screens */
+    }
+
+    .education-entry p {
+        margin-top: 10px;  /* Add space between logo and text */
+    }
+}
+
+/* Skills, Projects, and Contact Sections */
+#skills, #projects, #contact {
+    margin: 20px;
+}
+
+#skills ul, #projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills ul li, #projects ul li {
+    margin-bottom: 10px;
 }
