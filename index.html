@@ -6,6 +6,8 @@
     <title>Sriman Reddy Portfolio</title>
     <!-- Google Fonts for Modern Typography -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- Favicon -->
@@ -19,7 +21,7 @@
             <h1>Sriman Reddy Pingili</h1>
             <nav>
                 <ul>
-                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#education">Education</a></li>
@@ -29,11 +31,19 @@
         </div>
     </header>
 
-    <!-- About Me Section -->
-    <section id="about" class="section">
+    <!-- Home Section -->
+    <section id="home" class="home-section">
         <div class="container">
-            <h2>About Me</h2>
-            <p>Hi! I'm Sriman Reddy Pingili, currently pursuing my Master of Science in Data Science at the University at Buffalo. My passion lies in software engineering and artificial intelligence, where I strive to develop impactful, data-driven solutions.</p>
+            <div class="home-content">
+                <div class="image-wrapper">
+                    <img src="images/picture.jpg" alt="Profile Picture">
+                </div>
+                <div class="summary">
+                    <h2>Hello, I'm Sriman Reddy</h2>
+                    <p>I am a software engineer and data scientist passionate about building AI-driven solutions and developing web applications. With a strong foundation in DevOps, full-stack development, and artificial intelligence, I’m on a mission to create impactful and innovative software.</p>
+                    <a href="assets/Sriman_Resume_SDE.pdf" download="Sriman_Resume_SDE.pdf" class="resume-btn">Download My Resume</a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -58,16 +68,16 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Skills Section with Icons -->
     <section id="skills" class="section">
         <div class="container">
             <h2>Skills</h2>
             <ul class="skills-list">
-                <li><strong>Languages:</strong> C++, Python, JavaScript, Golang</li>
-                <li><strong>Frameworks:</strong> React.js, Node.js, Flask</li>
-                <li><strong>Databases:</strong> MongoDB, PostgreSQL, MySQL</li>
-                <li><strong>DevOps:</strong> Docker, Kubernetes, Jenkins, Ansible</li>
-                <li><strong>AI/ML:</strong> TensorFlow, PyTorch, Scikit-learn, Transformers</li>
+                <li><i class="fas fa-code"></i> <strong>Languages:</strong> C++, Python, JavaScript, Golang</li>
+                <li><i class="fas fa-cogs"></i> <strong>Frameworks:</strong> React.js, Node.js, Flask</li>
+                <li><i class="fas fa-database"></i> <strong>Databases:</strong> MongoDB, PostgreSQL, MySQL</li>
+                <li><i class="fas fa-server"></i> <strong>DevOps:</strong> Docker, Kubernetes, Jenkins, Ansible</li>
+                <li><i class="fas fa-brain"></i> <strong>AI/ML:</strong> TensorFlow, PyTorch, Scikit-learn, Transformers</li>
             </ul>
         </div>
     </section>
@@ -91,13 +101,12 @@
     <section id="contact" class="section">
         <div class="container">
             <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:srimanre@buffalo.edu">srimanre@buffalo.edu</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/psrimanreddy" target="_blank">linkedin.com/in/psrimanreddy</a></p>
-            <p>
-                <a href="assets/Sriman_Resume_SDE.pdf" download="Sriman_Resume_SDE.pdf">
-                    <button>Download My Resume</button>
-                </a>
-            </p>
+            <form action="submit_form" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </div>
     </section>
 
