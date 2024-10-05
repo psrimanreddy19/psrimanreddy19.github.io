@@ -93,3 +93,21 @@ footer {
 #skills ul li, #projects ul li {
     margin-bottom: 10px;
 }
+
+button {
+    background-color: #4CAF50; /* Green background */
+    border: none;              /* No border */
+    color: white;              /* White text */
+    padding: 10px 20px;        /* Padding around the text */
+    text-align: center;        /* Center text */
+    text-decoration: none;     /* Remove underline */
+    display: inline-block;     /* Keep it inline */
+    font-size: 16px;           /* Font size */
+    margin: 10px 2px;          /* Space around the button */
+    cursor: pointer;           /* Pointer cursor on hover */
+    border-radius: 5px;        /* Rounded corners */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
