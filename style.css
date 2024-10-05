@@ -219,7 +219,7 @@ footer p {
 
 /* Education Section */
 .alt-bg {
-    background-color: #f4f4f4;  /* Light neutral background color */
+    background-color: #ffffff;  /* White background for consistency */
     padding: 50px 0;
 }
 
@@ -241,12 +241,13 @@ h2 {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    max-width: 380px;  /* Increased width for cards */
+    max-width: 380px;  /* Adjusted width for cards */
     width: 100%;
     color: #333;  /* Dark text color */
     text-align: left;  /* Left-align text */
     display: flex;
     flex-direction: column;
+    align-items: center;  /* Center the content inside the card */
     gap: 15px;
     transition: transform 0.3s ease;
 }
@@ -256,9 +257,16 @@ h2 {
 }
 
 .edu-logo {
-    width: 120px;  /* Increased logo size */
+    width: 100%;  /* Logo covers the full width of the card */
     height: auto;
-    margin-bottom: 15px;
+    max-height: 150px;  /* Limit logo height to maintain aspect ratio */
+    object-fit: contain;  /* Ensure the logo doesn't distort */
+    margin-bottom: 20px;
+}
+
+.edu-details {
+    text-align: left;  /* Ensure text is left-aligned after the logo */
+    width: 100%;  /* Text takes full width under the logo */
 }
 
 .edu-details h3 {
