@@ -254,19 +254,17 @@ h2 {
 }
 
 .edu-logo {
-    width: 100%;  /* Logo will cover the entire width of the card */
-    height: 180px;  /* Fix a larger height to cover more vertical space */
+    width: 100% !important;
+    height: 180px !important;  /* Force height of the logo */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;  /* Optional: background color for contrast */
-    padding: 20px;
-    box-sizing: border-box;
+    background-color: #f0f0f0;  /* Optional */
 }
 
 .edu-logo img {
-    max-height: 100%;  /* Ensure logo fits within the allocated space */
-    width: auto;  /* Maintain aspect ratio */
+    max-height: 100% !important;  /* Ensure the logo takes full height */
+    width: auto !important;  /* Maintain aspect ratio */
 }
 
 .edu-details {
