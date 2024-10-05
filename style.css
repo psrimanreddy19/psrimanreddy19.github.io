@@ -216,3 +216,53 @@ footer {
 footer p {
     margin: 5px 0;
 }
+
+/* Education Section */
+.education-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.education-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.2s ease;
+}
+
+.education-card:hover {
+    transform: scale(1.05);
+}
+
+.edu-logo {
+    width: 80px;
+    height: auto;
+}
+
+.edu-details h3 {
+    font-size: 1.4em;
+    margin-bottom: 5px;
+}
+
+.edu-details p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.edu-details ul {
+    list-style: disc;
+    padding-left: 20px;
+    color: #333;
+}
+
+.edu-details ul li {
+    margin-bottom: 5px;
+}
