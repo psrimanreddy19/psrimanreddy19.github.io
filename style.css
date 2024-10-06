@@ -31,13 +31,13 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.header-container {
+.header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header-name {
+header h1 {
     font-size: 20px;
     margin-left: 20px; /* Aligns name on top left */
 }
@@ -126,66 +126,6 @@ body {
     background-color: #45a049;
 }
 
-/* Tab Buttons */
-.tabs {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.tab-btn {
-    background-color: #2C3E50;
-    color: #fff;
-    padding: 10px 20px;
-    margin: 0 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.2em;
-}
-
-.tab-btn.active {
-    background-color: #4CAF50; /* Active tab color */
-}
-
-.tab-btn:hover {
-    background-color: #45a049;
-}
-
-/* Hide inactive project categories */
-.project-category {
-    display: none;
-}
-
-.active-category {
-    display: block;
-}
-
-/* Project Cards */
-.project-cards {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 10px;
-    width: 300px;
-    transition: transform 0.2s ease;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card h4 {
-    font-size: 1.4em;
-    margin-bottom: 10px;
-}
-
 /* Experience Section */
 #experience .experience-list {
     margin-top: 20px;
@@ -221,77 +161,6 @@ body {
 
 .skills-list li i {
     margin-right: 10px;
-}
-
-/* Contact Section */
-.contact-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 40px 0;
-    justify-items: center;
-}
-
-.contact-box {
-    background-color: #0d2236;
-    color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    width: 100%;
-    max-width: 350px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.contact-box:hover {
-    transform: scale(1.05);
-    background-color: #122b45;
-}
-
-.contact-box i {
-    font-size: 40px;
-    margin-bottom: 15px;
-    color: #4CAF50;
-}
-
-.contact-box h3 {
-    color: #4CAF50;
-    margin-bottom: 10px;
-    font-size: 1.4em;
-}
-
-.contact-box p {
-    margin: 0;
-    line-height: 1.6;
-    font-size: 1.1em;
-}
-
-.contact-link {
-    color: #FFB300;
-    text-decoration: underline;
-    transition: color 0.3s ease;
-}
-
-.contact-link:hover {
-    color: #FFD54F;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.social-icons a {
-    color: #fff;
-    font-size: 30px;
-    transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-    color: #4CAF50;
 }
 
 /* Footer */
