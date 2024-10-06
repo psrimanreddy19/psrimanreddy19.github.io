@@ -350,14 +350,15 @@ body {
     font-size: 1.1em;
 }
 
-.contact-box a {
-    color: inherit;            /* Inherit the color from parent (white) */
-    text-decoration: none;
+/* Contact Link Styles */
+.contact-link {
+    color: #FFB300; /* Golden/Amber color for email and phone links */
+    text-decoration: underline; /* Underline for links */
     transition: color 0.3s ease;
 }
 
-.contact-box a:hover {
-    color: #4CAF50;             /* Hover effect for links */
+.contact-link:hover {
+    color: #FFD54F; /* Lighter golden color on hover */
 }
 
 .social-icons {
