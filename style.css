@@ -173,36 +173,60 @@ body {
     margin-bottom: 10px;
 }
 
-/* Contact Form */
-#contact form {
+/* General Contact Section Styles */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.contact-box {
+    background-color: #0d2236;  /* Dark background color */
+    color: #fff;                /* White text for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.contact-box i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #4CAF50; /* Green icon color */
+}
+
+.contact-box h3 {
+    color: #4CAF50; /* Green heading color */
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.social-icons {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
+    justify-content: center;
+    gap: 15px;
 }
 
-#contact form input,
-#contact form textarea {
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-}
-
-#contact form button {
-    background-color: #4CAF50;
+.social-icons a {
     color: #fff;
-    padding: 10px 20px;
-    border: none;
-    font-size: 18px;
-    border-radius: 5px;
-    cursor: pointer;
+    font-size: 24px;
+    transition: color 0.3s ease;
 }
 
-#contact form button:hover {
-    background-color: #45a049;
+.social-icons a:hover {
+    color: #4CAF50; /* Hover effect for social icons */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Footer */
