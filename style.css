@@ -1,18 +1,10 @@
 /* General Styles */
-:root {
-    --font-size-large: 1.4em;
-    --font-size-medium: 1.2em;
-    --font-size-small: 1em;
-}
-
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    padding-top: 80px;  /* To account for the fixed header */
-    font-size: var(--font-size-small);
 }
 
 .container {
@@ -24,7 +16,6 @@ body {
 h1, h2, h3 {
     color: #2C3E50;
     margin-bottom: 20px;
-    font-size: var(--font-size-large);
 }
 
 /* Header Styles */
@@ -62,6 +53,10 @@ header nav ul li a {
 
 header nav ul li a:hover {
     border-bottom: 2px solid #4CAF50;
+}
+
+body {
+    padding-top: 80px;  /* To account for the fixed header */
 }
 
 /* Home Section Styles */
@@ -103,7 +98,7 @@ header nav ul li a:hover {
 }
 
 .summary p {
-    font-size: var(--font-size-medium);
+    font-size: 1.1em;
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -124,55 +119,41 @@ header nav ul li a:hover {
     background-color: #45a049;
 }
 
-/* Responsive adjustments */
-@media (max-width: 1024px) {
-    .home-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .summary {
-        margin-left: 0;
-        margin-top: 20px;
-    }
+/* Tab Buttons */
+.tabs {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-@media (max-width: 768px) {
-    .home-content {
-        flex-direction: column;
-    }
-
-    .summary {
-        margin-left: 0;
-        margin-top: 20px;
-    }
+.tab-btn {
+    background-color: #2C3E50;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
 }
 
-/* Skills Section with Icons */
-.skills-list {
-    list-style: none;
-    padding: 0;
+.tab-btn.active {
+    background-color: #4CAF50; /* Active tab color */
 }
 
-.skills-list li {
-    margin-bottom: 15px;
-    font-size: var(--font-size-medium);
+.tab-btn:hover {
+    background-color: #45a049;
 }
 
-.skills-list li i {
-    margin-right: 10px;
-}
-
-/* Project Section Styles */
-.project-bg {
-    background-color: #f9f9f9;
-    padding: 50px 0;
-}
-
+/* Hide inactive project categories */
 .project-category {
-    margin-bottom: 40px;
+    display: none;
 }
 
+.active-category {
+    display: block;
+}
+
+/* Project Cards */
 .project-cards {
     display: flex;
     justify-content: space-around;
@@ -198,14 +179,7 @@ header nav ul li a:hover {
     margin-bottom: 10px;
 }
 
-.project-category h3 {
-    font-size: 1.6em;
-    color: #2C3E50;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-/* General Contact Section Styles */
+/* Contact Section */
 .contact-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -276,13 +250,6 @@ header nav ul li a:hover {
     color: #4CAF50;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
 /* Footer */
 footer {
     background-color: #2C3E50;
@@ -293,81 +260,4 @@ footer {
 
 footer p {
     margin: 5px 0;
-}
-
-/* Education Section */
-.education-bg {
-    background-color: #ffffff;
-    padding: 50px 0;
-}
-
-h2 {
-    color: #2C3E50;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.education-container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 40px;
-}
-
-.education-card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 0px;
-    max-width: 380px;
-    width: 100%;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.3s ease;
-}
-
-.education-card:hover {
-    transform: scale(1.05);
-}
-
-.edu-logo {
-    width: 100%;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;
-}
-
-.edu-logo img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
-
-.edu-details {
-    padding: 20px;
-    text-align: left;
-    width: 100%;
-}
-
-.edu-details h3 {
-    font-size: 1.4em;
-    margin-bottom: 10px;
-}
-
-.edu-details p {
-    margin: 8px 0;
-    color: #555;
-}
-
-.edu-details ul {
-    list-style: disc;
-    padding-left: 20px;
-}
-
-.edu-details ul li {
-    margin-bottom: 5px;
-    color: #333;
 }
