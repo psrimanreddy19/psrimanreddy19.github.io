@@ -54,17 +54,17 @@
             <h2>Experience</h2>
             <div class="experience-list">
                 <div class="experience-item">
-                    <h3><img src="images/Mathologic_Logo.png" class="experience-logo" alt="Mathologic Logo"> Software Engineer - Mathologic Technologies</h3>
+                    <h3>Software Engineer - Mathologic Technologies</h3>
                     <p><strong>Duration:</strong> September 2022 – December 2022</p>
                     <p>Revamped the Shed Allocation process, improving locomotive-shed mapping and optimizing resource utilization. Developed a RESTful API using Go, Gin framework, and deployed on Mathologic’s server, ensuring efficient handling of requests.</p>
                 </div>
                 <div class="experience-item">
-                    <h3><img src="images/IUDX_Logo.png" class="experience-logo" alt="IUDX Logo"> Software Engineer Intern - Indian Institute of Science</h3>
+                    <h3>Software Engineer Intern - Indian Institute of Science</h3>
                     <p><strong>Duration:</strong> December 2022 – June 2023</p>
                     <p>Engineered an Argo server for India Urban Data Exchange (IUDX) unit using Go. Built APIs for workflow submissions and log streaming, managing over 90 workflow requests daily.</p>
                 </div>
                 <div class="experience-item">
-                    <h3><img src="images/IIITB_Logo.png" class="experience-logo" alt="IIIT Bangalore Logo"> Research Assistant - IIIT Bangalore</h3>
+                    <h3>Research Assistant - IIIT Bangalore</h3>
                     <p><strong>Duration:</strong> January 2022 – May 2022</p>
                     <p>Improved a multimodal transformer for Visual Question Answering, boosting accuracy by 25% for visually impaired users. Enhanced model performance on TextVQA benchmarks by integrating dynamic pointer networks.</p>
                 </div>
@@ -86,53 +86,54 @@
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="section alt-bg">
+    <!-- Projects Section -->
+    <section id="projects" class="section alt-bg">
         <div class="container">
-            <h2>Education</h2>
-            <div class="education-container">
-                <!-- University at Buffalo -->
-                <div class="education-card">
-                    <div class="edu-logo" style="width: 100%; height: 180px; display: flex; justify-content: center; align-items: center;">
-                        <img src="images/UB_Logo.png" style="max-height: 100%; width: auto;" alt="University at Buffalo Logo">
+            <h2>Projects</h2>
+
+            <!-- Tab Buttons -->
+            <div class="tabs">
+                <button class="tab-btn active" onclick="showCategory('sde')">Software Engineering</button>
+                <button class="tab-btn" onclick="showCategory('data-science')">Data Science</button>
+            </div>
+
+            <!-- Software Engineering Projects (default visible) -->
+            <div id="sde" class="project-category active-category">
+                <div class="project-cards">
+                    <div class="card">
+                        <h4>DevOps-Enabled Problem-Solving Tracker App</h4>
+                        <p>A React-based app that helps users track their progress on interview problems, integrated with CI/CD pipelines for automated testing and deployment.</p>
                     </div>
-                    <div class="edu-details">
-                        <h3>University at Buffalo, The State University of New York</h3>
-                        <p>Master of Science in Data Science</p>
-                        <p><strong>August 2023 - December 2024</strong></p>
-                        <ul>
-                            <li>Software Production Engineering</li>
-                            <li>Data Structures & Algorithms</li>
-                            <li>Programming Languages</li>
-                            <li>Database Systems</li>
-                            <li>Machine Learning</li>
-                        </ul>
+                    <div class="card">
+                        <h4>BookBar Web Application</h4>
+                        <p>A full-stack website that acts as an online marketplace for buying and selling books, built with React.js, Node.js, and MongoDB.</p>
+                    </div>
+                    <div class="card">
+                        <h4>Movie Critique Web App</h4>
+                        <p>Developed a React-Flask app with personalized profiles, rankings, watchlists, streaming links, and analytics. Built with PostgreSQL and KNN-based recommendation systems.</p>
                     </div>
                 </div>
+            </div>
 
-                <!-- IIIT Bangalore -->
-                <div class="education-card">
-                    <div class="edu-logo" style="width: 100%; height: 180px; display: flex; justify-content: center; align-items: center;">
-                        <img src="images/IIITB_Logo.png" style="max-height: 100%; width: auto;" alt="IIIT Bangalore Logo">
+            <!-- Data Science Projects (hidden by default) -->
+            <div id="data-science" class="project-category">
+                <div class="project-cards">
+                    <div class="card">
+                        <h4>Mercari Price Suggestion Challenge</h4>
+                        <p>Developed a machine learning model for price prediction and built an interactive Flask-based UI for real-time price suggestions.</p>
                     </div>
-                    <div class="edu-details">
-                        <h3>International Institute of Information Technology, Bangalore</h3>
-                        <p>Integrated Master of Technology, Minor in Computer Science</p>
-                        <p><strong>August 2018 - July 2023</strong></p>
-                        <ul>
-                            <li>Data Structures & Algorithms</li>
-                            <li>Operating Systems</li>
-                            <li>Database Systems</li>
-                            <li>Machine Learning</li>
-                            <li>Computer Networks</li>
-                        </ul>
+                    <div class="card">
+                        <h4>Image Captioning Using CNN-LSTM System</h4>
+                        <p>Developed a neural network model for automatic image captioning using ResNet50 and LSTM, achieving a high BLEU score.</p>
+                    </div>
+                    <div class="card">
+                        <h4>Fantasy Football</h4>
+                        <p>Designed a web-based tool using Python and PostgreSQL to evaluate football player statistics, implementing database design and normalization for better performance.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Projects Section (unchanged) -->
 
     <!-- Contact Section -->
     <section id="contact" class="section">
