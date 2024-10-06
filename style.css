@@ -229,6 +229,84 @@ body {
     }
 }
 
+/* General Contact Section Styles */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px 0;
+    justify-items: center;
+}
+
+.contact-box {
+    background-color: #0d2236;  /* Dark background color */
+    color: #fff;                /* White text for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-box:hover {
+    transform: scale(1.05);  /* Scale up on hover for emphasis */
+    background-color: #122b45; /* Slightly lighter shade on hover */
+}
+
+.contact-box i {
+    font-size: 40px;           /* Larger icons for better visibility */
+    margin-bottom: 15px;
+    color: #4CAF50;            /* Green icon color */
+}
+
+.contact-box h3 {
+    color: #4CAF50;            /* Green heading color */
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+.contact-box p {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+.contact-box a {
+    color: #fff;                /* Links inherit color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-box a:hover {
+    color: #4CAF50;             /* Hover effect for links */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 30px;            /* Bigger icons */
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #4CAF50;             /* Hover effect for social icons */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Footer */
 footer {
     background-color: #2C3E50;
