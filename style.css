@@ -219,58 +219,59 @@ footer p {
 
 /* Education Section */
 .alt-bg {
-    background-color: #ffffff;  /* White background for consistency */
+    background-color: #ffffff;
     padding: 50px 0;
 }
 
 h2 {
-    color: #2C3E50;  /* Dark heading color for contrast */
+    color: #2C3E50;
     text-align: center;
     margin-bottom: 40px;
 }
 
 .education-container {
     display: flex;
-    justify-content: space-evenly;  /* Even spacing between cards */
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 40px;  /* Adjusted gap for better spacing */
+    gap: 40px;
 }
 
 .education-card {
-    background-color: #fff;  /* White background for cards */
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 0px;  /* Remove padding to allow more space for the logo */
-    max-width: 380px;  /* Adjusted width for cards */
+    padding: 0px;
+    max-width: 380px;
     width: 100%;
-    color: #333;  /* Dark text color */
+    color: #333;
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease;
 }
 
 .education-card:hover {
-    transform: scale(1.05);  /* Slight hover effect */
+    transform: scale(1.05);
 }
 
 .edu-logo {
-    width: 100% !important;
-    height: 180px !important;  /* Force height of the logo */
+    width: 100%;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;  /* Optional */
+    background-color: #f0f0f0;
 }
 
 .edu-logo img {
-    max-height: 100% !important;  /* Ensure the logo takes full height */
-    width: auto !important;  /* Maintain aspect ratio */
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;  /* Ensures the logo scales properly within the container */
 }
 
 .edu-details {
-    padding: 20px;  /* Padding for text content */
-    text-align: left;  /* Ensure text is left-aligned after the logo */
-    width: 100%;  /* Text takes full width under the logo */
+    padding: 20px;
+    text-align: left;
+    width: 100%;
 }
 
 .edu-details h3 {
@@ -280,7 +281,7 @@ h2 {
 
 .edu-details p {
     margin: 8px 0;
-    color: #555;  /* Medium gray for additional text */
+    color: #555;
 }
 
 .edu-details ul {
@@ -290,5 +291,5 @@ h2 {
 
 .edu-details ul li {
     margin-bottom: 5px;
-    color: #333;  /* Dark text for list items */
+    color: #333;
 }
