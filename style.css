@@ -147,7 +147,16 @@ body {
     margin-right: 10px;
 }
 
-/* Project Cards */
+/* Project Section Styles */
+.section.alt-bg {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.project-category {
+    margin-bottom: 40px;
+}
+
 .project-cards {
     display: flex;
     justify-content: space-around;
@@ -168,9 +177,23 @@ body {
     transform: scale(1.05);
 }
 
-.card h3 {
+.card h4 {
     font-size: 1.4em;
     margin-bottom: 10px;
+}
+
+/* Adjusting categories */
+.project-category h3 {
+    font-size: 1.6em;
+    color: #2C3E50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project-category .project-cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 /* General Contact Section Styles */
