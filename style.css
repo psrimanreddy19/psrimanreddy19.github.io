@@ -1,10 +1,18 @@
 /* General Styles */
+:root {
+    --font-size-large: 1.4em;
+    --font-size-medium: 1.2em;
+    --font-size-small: 1em;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    padding-top: 80px;  /* To account for the fixed header */
+    font-size: var(--font-size-small);
 }
 
 .container {
@@ -16,6 +24,7 @@ body {
 h1, h2, h3 {
     color: #2C3E50;
     margin-bottom: 20px;
+    font-size: var(--font-size-large);
 }
 
 /* Header Styles */
@@ -55,10 +64,6 @@ header nav ul li a:hover {
     border-bottom: 2px solid #4CAF50;
 }
 
-body {
-    padding-top: 80px;  /* To account for the fixed header */
-}
-
 /* Home Section Styles */
 .home-section {
     display: flex;
@@ -71,18 +76,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;  /* Ensures responsiveness */
+    flex-wrap: wrap;
 }
 
 .image-wrapper {
     flex: 1;
-    max-width: 300px;  /* Limit image size */
+    max-width: 300px;
 }
 
 .image-wrapper img {
     border-radius: 50%;
-    width: 100%;  /* Ensures image is responsive */
-    height: auto;  /* Maintain aspect ratio */
+    width: 100%;
+    height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -98,7 +103,7 @@ body {
 }
 
 .summary p {
-    font-size: 1.1em;
+    font-size: var(--font-size-medium);
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -120,12 +125,23 @@ body {
 }
 
 /* Responsive adjustments */
+@media (max-width: 1024px) {
+    .home-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .summary {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
 @media (max-width: 768px) {
     .home-content {
-        flex-direction: column;  /* Stack image and summary vertically on small screens */
-        text-align: center;  /* Center content for smaller screens */
+        flex-direction: column;
     }
-    
+
     .summary {
         margin-left: 0;
         margin-top: 20px;
@@ -140,7 +156,7 @@ body {
 
 .skills-list li {
     margin-bottom: 15px;
-    font-size: 1.2em;
+    font-size: var(--font-size-medium);
 }
 
 .skills-list li i {
@@ -148,7 +164,7 @@ body {
 }
 
 /* Project Section Styles */
-.section.alt-bg {
+.project-bg {
     background-color: #f9f9f9;
     padding: 50px 0;
 }
@@ -182,18 +198,11 @@ body {
     margin-bottom: 10px;
 }
 
-/* Adjusting categories */
 .project-category h3 {
     font-size: 1.6em;
     color: #2C3E50;
     margin-bottom: 20px;
     text-align: center;
-}
-
-.project-category .project-cards {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
 }
 
 /* General Contact Section Styles */
@@ -206,8 +215,8 @@ body {
 }
 
 .contact-box {
-    background-color: #0d2236;  /* Dark background color */
-    color: #fff;                /* White text for contrast */
+    background-color: #0d2236;
+    color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -218,18 +227,18 @@ body {
 }
 
 .contact-box:hover {
-    transform: scale(1.05);  /* Scale up on hover for emphasis */
-    background-color: #122b45; /* Slightly lighter shade on hover */
+    transform: scale(1.05);
+    background-color: #122b45;
 }
 
 .contact-box i {
-    font-size: 40px;           /* Larger icons for better visibility */
+    font-size: 40px;
     margin-bottom: 15px;
-    color: #4CAF50;            /* Green icon color */
+    color: #4CAF50;
 }
 
 .contact-box h3 {
-    color: #4CAF50;            /* Green heading color */
+    color: #4CAF50;
     margin-bottom: 10px;
     font-size: 1.4em;
 }
@@ -240,15 +249,14 @@ body {
     font-size: 1.1em;
 }
 
-/* Contact Link Styles */
 .contact-link {
-    color: #FFB300; /* Golden/Amber color for email and phone links */
-    text-decoration: underline; /* Underline for links */
+    color: #FFB300;
+    text-decoration: underline;
     transition: color 0.3s ease;
 }
 
 .contact-link:hover {
-    color: #FFD54F; /* Lighter golden color on hover */
+    color: #FFD54F;
 }
 
 .social-icons {
@@ -260,12 +268,12 @@ body {
 
 .social-icons a {
     color: #fff;
-    font-size: 30px;            /* Bigger icons */
+    font-size: 30px;
     transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-    color: #4CAF50;             /* Hover effect for social icons */
+    color: #4CAF50;
 }
 
 /* Responsive Design */
@@ -288,7 +296,7 @@ footer p {
 }
 
 /* Education Section */
-.alt-bg {
+.education-bg {
     background-color: #ffffff;
     padding: 50px 0;
 }
@@ -335,7 +343,7 @@ h2 {
 .edu-logo img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain;  /* Ensures the logo scales properly within the container */
+    object-fit: contain;
 }
 
 .edu-details {
