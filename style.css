@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 .container {
@@ -43,6 +44,7 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    overflow-x: hidden; /* Prevent header overflow */
 }
 
 .logo {
@@ -55,6 +57,8 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -83,6 +87,7 @@ body {
     padding: 80px 0;
     background-color: #f4f4f4;
     color: #333;
+    overflow-x: hidden; /* Prevent home section overflow */
 }
 
 .home-content {
@@ -191,6 +196,7 @@ body {
     margin: 10px;
     width: 300px;
     transition: transform 0.2s ease;
+    box-sizing: border-box;
 }
 
 .card:hover {
@@ -202,12 +208,15 @@ body {
     margin-bottom: 10px;
 }
 
+/* Skills Grid */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 20px;
     justify-items: center;
+    width: 100%; /* Ensure skills grid uses full width */
+    box-sizing: border-box;
 }
 
 .skill-card {
@@ -237,7 +246,7 @@ body {
     color: #555;
 }
 
-/* Education Section Styles */
+/* Education Section */
 .education-bg {
     background-color: #ffffff;
     padding: 50px 0;
@@ -513,7 +522,17 @@ body {
         align-items: center;
     }
 
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
     .contact-grid {
         grid-template-columns: 1fr;
+    }
+
+    .education-container,
+    .experience-container {
+        flex-direction: column;
+        align-items: center;
     }
 }
