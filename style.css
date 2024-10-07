@@ -489,3 +489,66 @@ body {
 .repo-icon:hover {
     color: #4CAF50; /* Change to green on hover */
 }
+h2 {
+    text-align: center; /* Center all section headings */
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    color: #2C3E50; /* Keep heading color consistent */
+}
+
+/* Media query for small devices (mobile phones) */
+@media (max-width: 768px) {
+    /* Adjust the container width */
+    .container {
+        width: 100%; /* Take full width on small screens */
+        padding: 0 15px; /* Add padding to the sides */
+    }
+
+    /* Center align home content */
+    .home-content {
+        flex-direction: column; /* Stack the image and summary vertically */
+        text-align: center; /* Center the text and image */
+        gap: 20px; /* Reduce gap for smaller screens */
+    }
+
+    .image-wrapper {
+        max-width: 200px; /* Smaller image on mobile */
+    }
+
+    .summary {
+        max-width: 100%; /* Let the text take the full width */
+    }
+
+    /* Adjust project cards */
+    .project-cards {
+        flex-direction: column; /* Stack project cards vertically */
+        align-items: center; /* Center the cards */
+    }
+
+    /* Skills section on mobile */
+    .skills-grid {
+        grid-template-columns: 1fr; /* Single column layout for skills */
+        grid-template-rows: auto; /* Automatic row height */
+        gap: 15px; /* Reduce spacing */
+    }
+
+    /* Education and Experience Cards */
+    .education-container, .experience-container {
+        flex-direction: column; /* Stack the cards vertically */
+        align-items: center; /* Center the cards */
+    }
+
+    .education-card, .experience-card {
+        max-width: 100%; /* Full width for cards */
+        margin-bottom: 20px; /* Add margin between stacked cards */
+    }
+
+    /* Contact section adjustments */
+    .contact-grid {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    .contact-box {
+        max-width: 100%; /* Full width for contact boxes */
+    }
+}
