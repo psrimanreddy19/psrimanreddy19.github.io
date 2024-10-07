@@ -208,15 +208,13 @@ body {
     margin-bottom: 10px;
 }
 
-/* Skills Grid */
+/* Skills Section - Default for Desktop */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on desktop */
+    grid-template-rows: auto;
     gap: 20px;
     justify-items: center;
-    width: 100%; /* Ensure skills grid uses full width */
-    box-sizing: border-box;
 }
 
 .skill-card {
@@ -523,7 +521,21 @@ body {
     }
 
     .skills-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Single column on mobile */
+        gap: 15px;
+        padding: 0 10px; /* Reduce padding for mobile */
+    }
+
+    .skill-card h3 {
+        font-size: 1.4em; /* Slightly reduce heading size for mobile */
+    }
+
+    .skill-card p {
+        font-size: 0.95em; /* Reduce text size for better fit */
+    }
+
+    .skill-card {
+        padding: 20px; /* Reduce padding for mobile to fit content */
     }
 
     .contact-grid {
