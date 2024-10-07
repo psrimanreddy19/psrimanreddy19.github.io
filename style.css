@@ -499,8 +499,28 @@ body {
     color: #4CAF50;
 }
 
+/* General Mobile Fix */
+body {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
+    /* Ensure all sections and elements fit the screen */
+    .container,
+    .home-section,
+    .project-cards,
+    .skills-grid,
+    .education-container,
+    .experience-container {
+        width: 100%; /* Ensure full width */
+        max-width: 100%;
+        padding-left: 0; /* Remove unnecessary padding */
+        padding-right: 0; /* Remove unnecessary padding */
+        overflow-x: hidden; /* Prevent overflow */
+        margin: 0 auto; /* Center content */
+    }
+
     .hamburger {
         display: block; /* Show hamburger menu on mobile */
     }
@@ -563,15 +583,24 @@ body {
         font-size: 16px;
     }
 
+    /* Specific fix for project cards */
     .project-cards {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Stack project cards vertically */
+        align-items: center; /* Center cards horizontally */
     }
 
+    .card {
+        width: 90%; /* Ensure cards don't exceed screen width */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Fix for skill grid */
     .skills-grid {
-        grid-template-columns: 1fr; /* Single column on mobile */
-        gap: 15px;
-        padding: 0 10px; /* Reduce padding for mobile */
+        grid-template-columns: repeat(2, 1fr); /* Fit 2 skill cards in one row */
+        grid-template-rows: auto; /* Adjust rows automatically */
+        padding-left: 0; /* Remove padding */
+        padding-right: 0; /* Remove padding */
     }
 
     .skill-card h3 {
@@ -590,10 +619,18 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .education-container,
-    .experience-container {
-        flex-direction: column;
-        align-items: center;
+    /* Contact and Education sections */
+    .education-card,
+    .experience-card {
+        width: 90%; /* Ensure cards fit in mobile screen */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-box {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
