@@ -13,50 +13,69 @@ body {
     margin: 0 auto;
 }
 
-h1, h2, h3 {
+h1, h3 {
     color: #2C3E50;
     margin-bottom: 20px;
 }
 
-/* Header Styles */
+h2 {
+    text-align: center; /* Center all section headings */
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    color: #2C3E50; /* Keep heading color consistent */
+}
+
+/* Header styling */
 header {
     background-color: #2C3E50;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+    padding: 15px 0;
     position: fixed;
-    width: 100%;
     top: 0;
+    width: 100%;
     z-index: 100;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-header h1 {
-    font-size: 28px;
+/* Container for the header content */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center;
+    max-width: 1200px; /* Optional: set a max width for large screens */
+    margin: 0 auto; /* Center the header content */
+    padding: 0 20px; /* Add some padding to the sides */
 }
 
-header nav ul {
+/* Logo styling */
+.logo {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Navigation styling */
+nav ul {
     list-style: none;
-    padding: 0;
+    display: flex;
+    gap: 20px; /* Space between the navigation links */
 }
 
-header nav ul li {
-    display: inline-block;
-    margin: 0 15px;
+nav ul li {
+    display: inline;
 }
 
-header nav ul li a {
-    color: #fff;
+nav ul li a {
+    color: white;
     text-decoration: none;
     font-weight: 600;
 }
 
-header nav ul li a:hover {
+nav ul li a:hover {
     border-bottom: 2px solid #4CAF50;
 }
 
 body {
-    padding-top: 80px;  /* To account for the fixed header */
+    padding-top: 60px; /* Adjust padding to account for the smaller header */
 }
 
 /* Home Section Styles */
@@ -65,6 +84,8 @@ body {
     justify-content: center;
     align-items: center;
     padding: 80px 0;
+    background-color: #f4f4f4; /* Match the background with other sections */
+    color: #333; /* Use a darker text color */
 }
 
 .home-content {
@@ -72,29 +93,34 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 50px; /* Add spacing between image and text */
 }
 
 .image-wrapper {
     flex: 1;
-    max-width: 300px;
+    max-width: 300px; /* Control image size */
+    text-align: center; /* Center the image */
 }
 
 .image-wrapper img {
-    border-radius: 50%;
     width: 100%;
     height: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .summary {
     flex: 2;
-    margin-left: 40px;
     max-width: 600px;
+    text-align: left; /* Align text to the left */
 }
 
 .summary h2 {
-    font-size: 28px;
-    font-weight: 600;
+    font-size: 30px;
+    color: #2C3E50;
+    margin-bottom: 20px;
 }
 
 .summary p {
@@ -110,14 +136,14 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-    margin-top: 20px;
     font-weight: 600;
     transition: background-color 0.3s ease;
+    margin-top: 20px;
 }
 
 .resume-btn:hover {
     background-color: #45a049;
-}
+}   
 
 /* Tab Buttons */
 .tabs {
@@ -177,6 +203,41 @@ body {
 .card h4 {
     font-size: 1.4em;
     margin-bottom: 10px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, auto);  /* 2 rows */
+    gap: 20px; /* Adjust spacing */
+    justify-items: center;
+}
+
+.skill-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.skill-card h3 {
+    font-size: 1.6em;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #2C3E50;
+}
+
+.skill-card p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
 }
 
 /* Education Section Styles */
@@ -380,4 +441,51 @@ footer p {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+}
+
+/* General background for the entire page */
+body {
+    background-color: #f4f4f4; /* Light grey background that blends well with white cards */
+}
+
+/* For Education and Experience Sections */
+.section {
+    padding: 60px 0;
+    background-color: #f4f4f4; /* Same as the body background */
+}
+
+.education-container,
+.experience-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.education-card,
+.experience-card {
+    background-color: #fff; /* White card background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover,
+.experience-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Hover effect for cards */
+}
+
+/* Style for the GitHub icon */
+.repo-icon {
+    margin-left: 10px;
+    font-size: 1.2em;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+/* Change color on hover */
+.repo-icon:hover {
+    color: #4CAF50; /* Change to green on hover */
 }
