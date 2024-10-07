@@ -19,10 +19,10 @@ h1, h3 {
 }
 
 h2 {
-    text-align: center; /* Center all section headings */
+    text-align: center;
     font-size: 2.2em;
     margin-bottom: 40px;
-    color: #2C3E50; /* Keep heading color consistent */
+    color: #2C3E50;
 }
 
 /* Header styling */
@@ -38,11 +38,11 @@ header {
 
 .header-container {
     display: flex;
-    justify-content: space-between; /* Space between logo and nav */
+    justify-content: space-between;
     align-items: center;
-    max-width: 1200px; /* Optional: set a max width for large screens */
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px; /* Add some padding to the sides */
+    padding: 0 20px;
 }
 
 .logo {
@@ -51,11 +51,10 @@ header {
     font-weight: bold;
 }
 
-/* Navigation styling */
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px; /* Space between the navigation links */
+    gap: 20px;
 }
 
 nav ul li {
@@ -73,7 +72,7 @@ nav ul li a:hover {
 }
 
 body {
-    padding-top: 60px; /* Adjust padding to account for the header */
+    padding-top: 60px;
 }
 
 /* Home Section Styles */
@@ -82,8 +81,8 @@ body {
     justify-content: center;
     align-items: center;
     padding: 80px 0;
-    background-color: #f4f4f4; /* Match the background with other sections */
-    color: #333; /* Use a darker text color */
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 .home-content {
@@ -93,13 +92,13 @@ body {
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
-    gap: 50px; /* Add spacing between image and text */
+    gap: 50px;
 }
 
 .image-wrapper {
     flex: 1;
-    max-width: 300px; /* Control image size */
-    text-align: center; /* Center the image */
+    max-width: 300px;
+    text-align: center;
 }
 
 .image-wrapper img {
@@ -112,7 +111,7 @@ body {
 .summary {
     flex: 2;
     max-width: 600px;
-    text-align: left; /* Align text to the left */
+    text-align: left;
 }
 
 .summary h2 {
@@ -161,7 +160,7 @@ body {
 }
 
 .tab-btn.active {
-    background-color: #4CAF50; /* Active tab color */
+    background-color: #4CAF50;
 }
 
 .tab-btn:hover {
@@ -203,12 +202,11 @@ body {
     margin-bottom: 10px;
 }
 
-/* Skills Grid */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    grid-template-rows: repeat(2, auto);  /* 2 rows */
-    gap: 20px; /* Adjust spacing */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
     justify-items: center;
 }
 
@@ -291,7 +289,6 @@ body {
 }
 
 .edu-details h3 {
-    text-align: center; /* Center heading for education card */
     font-size: 1.4em;
     margin-bottom: 10px;
 }
@@ -309,51 +306,6 @@ body {
 .edu-details ul li {
     margin-bottom: 5px;
     color: #333;
-}
-
-/* Experience Section */
-.experience-bg {
-    background-color: #ffffff;
-    padding: 50px 0;
-}
-
-.experience-container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 40px;
-}
-
-.experience-card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 0;
-    max-width: 380px;
-    width: 100%;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.3s ease;
-}
-
-.experience-card:hover {
-    transform: scale(1.05);
-}
-
-.exp-logo {
-    width: 100%;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;
-}
-
-.exp-logo img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
 }
 
 /* Contact Section */
@@ -439,6 +391,100 @@ footer p {
     margin: 5px 0;
 }
 
+/* Experience Section Styles */
+.experience-bg {
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+
+.experience-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.experience-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    max-width: 380px;
+    width: 100%;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: scale(1.05);
+}
+
+.exp-logo {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.exp-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* General background for the entire page */
+body {
+    background-color: #f4f4f4;
+}
+
+/* For Education and Experience Sections */
+.section {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+}
+
+.education-container,
+.experience-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.education-card,
+.experience-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover,
+.experience-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the GitHub icon */
+.repo-icon {
+    margin-left: 10px;
+    font-size: 1.2em;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+/* Change color on hover */
+.repo-icon:hover {
+    color: #4CAF50;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     header {
@@ -450,9 +496,8 @@ footer p {
     }
 
     .home-content {
-        flex-direction: column;
         gap: 20px;
-        text-align: center;
+        flex-direction: column;
     }
 
     .summary h2 {
@@ -469,6 +514,6 @@ footer p {
     }
 
     .contact-grid {
-        grid-template-columns: 1fr; /* Single column for contact on mobile */
+        grid-template-columns: 1fr;
     }
 }
