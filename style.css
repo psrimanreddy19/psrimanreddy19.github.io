@@ -509,12 +509,13 @@ body {
         padding: 10px 0;
     }
 
-    /* Show the hamburger menu and hide navigation links */
+    /* Show the hamburger menu icon and hide the normal navigation links */
     .menu-toggle {
         display: block;
+        cursor: pointer;
     }
 
-    /* Hide the navigation links initially */
+    /* Hide navigation links initially in mobile view */
     nav ul {
         display: none;
         flex-direction: column;
@@ -523,16 +524,26 @@ body {
         width: 100%;
         top: 60px;
         left: 0;
+        padding: 0;
+        text-align: center; /* Center the entire nav list */
     }
 
+    /* Style the navigation links when hamburger is clicked */
     nav ul li {
-        text-align: center;
+        display: block;
+        width: 100%;
         padding: 10px 0;
     }
 
-    /* When the hamburger is toggled, show the menu */
+    nav ul li a {
+        display: block;
+        text-align: center; /* Center the link text */
+        padding: 10px;
+    }
+
+    /* When the hamburger is clicked (menu is shown) */
     nav ul.show {
-        display: flex;
+        display: flex; /* Display the nav links vertically */
     }
 
     .header-container {
@@ -592,4 +603,29 @@ body {
     cursor: pointer;
     font-size: 30px; /* Icon size */
     color: white;
+}
+
+/* Ensure the desktop view remains unchanged */
+@media (min-width: 769px) {
+    /* Restore the desktop view styles */
+    .menu-toggle {
+        display: none; /* Hide hamburger in desktop view */
+    }
+
+    nav ul {
+        display: flex; /* Normal horizontal flex layout */
+        position: static; /* Default positioning */
+        flex-direction: row; /* Horizontal layout */
+        justify-content: flex-end; /* Align navigation to the right */
+    }
+
+    nav ul li {
+        display: inline; /* Normal inline layout */
+        padding: 0;
+    }
+
+    nav ul li a {
+        text-align: left; /* Left-align for desktop */
+        padding: 0;
+    }
 }
