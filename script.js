@@ -18,3 +18,8 @@ function showCategory(category) {
     // Set the clicked tab to active
     event.currentTarget.classList.add("active");
 }
+
+function toggleMenu() {
+    var menu = document.querySelector('nav ul');
+    menu.classList.toggle('show');
+}

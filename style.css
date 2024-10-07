@@ -53,12 +53,19 @@ header {
     font-weight: bold;
 }
 
+/* Hide the hamburger icon initially */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Ensure the header navigation is displayed horizontally on larger screens */
 nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
-    padding: 0;
-    margin: 0;
 }
 
 nav ul li {
@@ -494,12 +501,42 @@ body {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show hamburger menu on mobile */
+    }
+
     header {
         padding: 10px 0;
     }
 
+    /* Show the hamburger menu and hide navigation links */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Hide the navigation links initially */
     nav ul {
-        gap: 10px;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #2C3E50;
+        width: 100%;
+        top: 60px;
+        left: 0;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /* When the hamburger is toggled, show the menu */
+    nav ul.show {
+        display: flex;
+    }
+
+    .header-container {
+        justify-content: space-between; /* Space between logo and hamburger menu */
     }
 
     .home-content {
@@ -547,4 +584,12 @@ body {
         flex-direction: column;
         align-items: center;
     }
+}
+
+/* Hamburger Menu Icon */
+.hamburger {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    font-size: 30px; /* Icon size */
+    color: white;
 }
