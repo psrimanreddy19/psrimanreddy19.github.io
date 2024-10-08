@@ -558,7 +558,9 @@ body {
     }
 
     .summary h2 {
-        font-size: 24px;
+        font-size: 20px; /* Adjust the font size to fit in a single line */
+        text-align: center; /* Ensure the text is centered */
+        white-space: nowrap; /* Prevent the text from wrapping to the next line */
     }
 
     .summary p {
