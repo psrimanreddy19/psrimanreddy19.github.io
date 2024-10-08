@@ -637,21 +637,19 @@ body, html {
 
 /* Home, Projects, Skills, and Contact Section Mobile Fix */
 .home-section, .projects-section, .skills-section, .contact-section {
-    width: 100vw; /* Ensure full width */
-    overflow-x: hidden; /* Avoid horizontal overflow */
-    padding-left: 15px; /* Restore left padding for sections */
-    padding-right: 15px; /* Restore right padding for sections */
+    padding-left: 20px; /* Equal padding on both sides */
+    padding-right: 20px; /* Equal padding on both sides */
     margin: 0 auto; /* Center content */
-    box-sizing: border-box; /* Include padding in the element's width */
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
 }
 
 /* Fix for all containers */
 .container {
     width: 100%; /* Ensure all containers take full width */
-    max-width: 1200px; /* Limit container size */
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
+    max-width: 1200px; /* Set maximum width */
+    padding-left: 20px; /* Ensure equal spacing on the left */
+    padding-right: 20px; /* Ensure equal spacing on the right */
+    margin: 0 auto; /* Center the container */
 }
 
 /* Image fix */
@@ -664,4 +662,11 @@ img {
 .project-cards, .skills-grid, .contact-grid {
     flex-wrap: wrap; /* Ensure wrapping on smaller screens */
     justify-content: center; /* Center items */
+}
+
+/* Ensure sections are full width but with proper spacing */
+section {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
 }
