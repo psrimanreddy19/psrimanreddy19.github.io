@@ -332,7 +332,7 @@ body {
 }
 
 .contact-box {
-    background-color: #0d2236;
+    background-color: #2C3E50; /* Set the background to match the footer color */
     color: #fff;
     padding: 20px;
     border-radius: 10px;
