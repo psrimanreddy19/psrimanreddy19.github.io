@@ -635,27 +635,32 @@ body, html {
     overflow-x: hidden;
 }
 
-/* Home Section Mobile Fix */
+/* Home, Projects, Skills, and Contact Section Mobile Fix */
 .home-section, .projects-section, .skills-section, .contact-section {
-    max-width: 100%; /* Ensure section doesn't exceed the viewport */
-    overflow-x: hidden;
-}
-
-/* Fix for all containers */
-.container, .home-content, .project-cards, .skills-grid, .contact-grid {
-    width: 100%; /* Ensure all containers take full width */
-    padding: 0;  /* Remove extra padding that can cause overflow */
-    margin: 0 auto; /* Center the content */
+    width: 100vw; /* Ensure full width */
+    overflow-x: hidden; /* Avoid horizontal overflow */
+    padding-left: 15px; /* Restore left padding for sections */
+    padding-right: 15px; /* Restore right padding for sections */
+    margin: 0 auto; /* Center content */
     box-sizing: border-box; /* Include padding in the element's width */
 }
 
-/* Specific fix for images */
+/* Fix for all containers */
+.container {
+    width: 100%; /* Ensure all containers take full width */
+    max-width: 1200px; /* Limit container size */
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+/* Image fix */
 img {
     max-width: 100%;
     height: auto;
 }
 
-/* Fix for project cards and skills grid in mobile */
+/* Flexbox wrapping on mobile */
 .project-cards, .skills-grid, .contact-grid {
     flex-wrap: wrap; /* Ensure wrapping on smaller screens */
     justify-content: center; /* Center items */
